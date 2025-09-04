@@ -1,0 +1,148 @@
+
+
+/* ---- 🎀 Pink-Light Purple Theme ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff99cc, #d9a7ff);
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* 🌸 Upper Section - Awareness */
+.info-section {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+/* 🔥 Headings */
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 28px;
+    color: #ffccff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 📝 Middle Section - Form */
+.form-section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    text-align: left;
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🎭 Input Field Animation */
+input:focus {
+    border: 2px solid #ff66b2;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
+    transform: scale(1.05);
+}
+
+/* ✨ Stylish Button */
+button {
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: linear-gradient(45deg, #ff66b2, #cc99ff);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🌟 Button Hover Effect */
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* 🔍 Lower Section - Prediction Result */
+.result-section {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.result-box {
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 18px;
+    border-radius: 12px;
+    display: inline-block;
+    border: 3px solid #ff66b2;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1.2s ease-in-out;
+}
+
+/* 💖 Footer - Developer Info */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* 🌀 Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+   
+

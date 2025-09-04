@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    <title>Breast Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Breast Cancer Prediction Result</h1>
+    <h2 style="color: red;">{{ prediction_text }}</h2>
+     <a href="{{ url_for('predict') }}">
+        <button>Try Again</button>
+    </a>
+    <footer>
+        
+    </footer>
+        
+            
+    
+
+    
+</body>
+</html>

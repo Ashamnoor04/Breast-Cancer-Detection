@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Breast Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Breast Cancer Prediction</title>
+</head>
+<body>
+    <h1>Breast Cancer Detection</h1>
+    <form action="/predict" method="post">
+        <h2>Enter Medical Test Values:</h2>
+
+        <label for="feature1">Mean Radius</label>
+        <input type="text" name="feature1" placeholder="e.g., 17.99" required><br>
+
+        <label for="feature2">Mean Texture</label>
+        <input type="text" name="feature2" placeholder="e.g., 10.38" required><br>
+
+        <label for="feature3">Mean Perimeter</label>
+        <input type="text" name="feature3" placeholder="e.g., 122.8" required><br>
+
+        <label for="feature4">Mean Area</label>
+        <input type="text" name="feature4" placeholder="e.g., 1001.0" required><br>
+
+        <label for="feature5">Mean Smoothness</label>
+        <input type="text" name="feature5" placeholder="e.g., 0.1184" required><br>
+
+        <label for="feature6">Mean Compactness</label>
+        <input type="text" name="feature6" placeholder="e.g., 0.2776" required><br>
+
+        <label for="feature7">Mean Concavity</label>
+        <input type="text" name="feature7" placeholder="e.g., 0.3001" required><br>
+
+        <label for="feature8">Mean Concave Points</label>
+        <input type="text" name="feature8" placeholder="e.g., 0.1471" required><br>
+
+        <label for="feature9">Mean Symmetry</label>
+        <input type="text" name="feature9" placeholder="e.g., 0.2419" required><br>
+
+        <label for="feature10">Mean Fractal Dimension</label>
+        <input type="text" name="feature10" placeholder="e.g., 0.07871" required><br>
+
+        <h2>Standard Error (SE) Features:</h2>
+
+        <label for="feature11">Radius SE</label>
+        <input type="text" name="feature11" placeholder="e.g., 1.095" required><br>
+
+        <label for="feature12">Texture SE</label>
+        <input type="text" name="feature12" placeholder="e.g., 0.9053" required><br>
+
+        <label for="feature13">Perimeter SE</label>
+        <input type="text" name="feature13" placeholder="e.g., 8.589" required><br>
+
+        <label for="feature14">Area SE</label>
+        <input type="text" name="feature14" placeholder="e.g., 153.4" required><br>
+
+        <label for="feature15">Smoothness SE</label>
+        <input type="text" name="feature15" placeholder="e.g., 0.006399" required><br>
+
+        <label for="feature16">Compactness SE</label>
+        <input type="text" name="feature16" placeholder="e.g., 0.04904" required><br>
+
+        <label for="feature17">Concavity SE</label>
+        <input type="text" name="feature17" placeholder="e.g., 0.05373" required><br>
+
+        <label for="feature18">Concave Points SE</label>
+        <input type="text" name="feature18" placeholder="e.g., 0.01587" required><br>
+
+        <label for="feature19">Symmetry SE</label>
+        <input type="text" name="feature19" placeholder="e.g., 0.03003" required><br>
+
+        <label for="feature20">Fractal Dimension SE</label>
+        <input type="text" name="feature20" placeholder="e.g., 0.006193" required><br>
+
+        <h2>Worst Features:</h2>
+
+        <label for="feature21">Radius Worst</label>
+        <input type="text" name="feature21" placeholder="e.g., 25.38" required><br>
+
+        <label for="feature22">Texture Worst</label>
+        <input type="text" name="feature22" placeholder="e.g., 17.33" required><br>
+
+        <label for="feature23">Perimeter Worst</label>
+        <input type="text" name="feature23" placeholder="e.g., 184.6" required><br>
+
+        <label for="feature24">Area Worst</label>
+        <input type="text" name="feature24" placeholder="e.g., 2019.0" required><br>
+
+        <label for="feature25">Smoothness Worst</label>
+        <input type="text" name="feature25" placeholder="e.g., 0.1622" required><br>
+
+        <label for="feature26">Compactness Worst</label>
+        <input type="text" name="feature26" placeholder="e.g., 0.6656" required><br>
+
+        <label for="feature27">Concavity Worst</label>
+        <input type="text" name="feature27" placeholder="e.g., 0.7119" required><br>
+
+        <label for="feature28">Concave Points Worst</label>
+        <input type="text" name="feature28" placeholder="e.g., 0.2654" required><br>
+
+        <label for="feature29">Symmetry Worst</label>
+        <input type="text" name="feature29" placeholder="e.g., 0.4601" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

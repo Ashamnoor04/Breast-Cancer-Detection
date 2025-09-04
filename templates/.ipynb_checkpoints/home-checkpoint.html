@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+    <title>Breast Cancer Awareness</title>
+</head>
+<body>
+    <h1>Welcome to the Breast Cancer Detection System</h1>
+    <p>Breast cancer is a type of cancer that originates in the cells of the breast. It occurs when breast cells undergo abnormal growth and division, leading to the formation of a tumor. If left untreated, breast cancer can spread to other parts of the body, a process known as metastasis. It is one of the most common cancers affecting women, but it can also occur in men, although rarely.</p>
+    <h2><b>Causes And Risk Factors </b></h2>
+    <p>The exact cause of breast cancer is not fully understood, but several risk factors have been identified, including:
+<ul>
+<li>Genetic Factors: Mutations in genes like BRCA1 and BRCA2 increase the risk of developing breast cancer.</li>
+
+<li>Hormonal Influence: High levels of estrogen and progesterone can contribute to abnormal cell growth in the breast.</li>
+
+<li>Lifestyle Factors: Poor diet, lack of physical activity, alcohol consumption, and smoking increase the risk.</li>
+
+<li>Family History: Having a close relative with breast cancer raises the likelihood of developing the disease.</li>
+
+<li>Age and Gender: The risk increases with age, and women are more prone to breast cancer than men.</li> </p>
+   </ul>
+    <h2><b>Symptoms of Breast Cancer</b></h2>
+    <p> Common signs and symptoms of breast cancer include:
+    <ul>
+    <li>A lump or thickening in the breast or underarm</li>
+
+    <li>Changes in breast size, shape, or appearance</li>
+
+<li>Unexplained pain in the breast or nipple</li>
+
+<li>Skin changes (redness, dimpling, or puckering)</li>
+
+<li>Nipple discharge, including blood</li>
+
+<li>Inverted or retracted nipple</li>
+</ul>
+         <a href="{{ url_for('predict') }}">
+        <button>Start Prediction</button>
+    </a>
+</body>
+</html>
